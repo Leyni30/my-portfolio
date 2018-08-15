@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -12,6 +12,8 @@
     <title>Start Project</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
     <!--[if lt IE 9]>
             <script src="scripts/html5shiv.min.js"></script>
@@ -19,7 +21,7 @@
 </head>
 
 <body>
-
+    <div class="main-overlay js-main-overlay"></div>
     <section class="cover-main" id="home">
         <header>
             <nav class="nav-wrapper">
@@ -30,14 +32,15 @@
                      </a>
                 </div>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">My Work</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Slider</a></li>
-                    <li><a href="#">Footer</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#slider">Slider</a></li>
+                    <li><a href="#footer">Footer</a></li>
                      
                 </ul>
             </nav>
+            <div class="menu-trigger js-menu-trigger"></div>
         </header>
 
         <div class="wrapper">
@@ -99,6 +102,32 @@
         </div>
     </section>
 
+    <div class="slider-div" id="slider">
+        <h2 class="sub-title">Slider Showcase</h2>
+        <div class="slider">
+            <div class="slide">
+                <img src="images/eleven.jpg" alt="" class="img-responsive"/>
+            </div>
+            <div class="slide">
+                <img src="images/ten.jpg" alt="" class="img-responsive"/>
+            </div>
+            <div class="slide">
+                <img src="images/one.jpg" alt="" class="img-responsive"/>
+            </div>
+            <div class="slide">
+                <img src="images/two.jpg" alt="" class="img-responsive"/>
+            </div>
+            <div class="slide">
+                <img src="images/three.jpg" alt="" class="img-responsive"/>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer">
+        <h1>Hi, I am a footer.</h1>
+    </footer>
+
 
 
 
@@ -106,15 +135,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="scripts/parallax.min.js"></script>
     <script src="scripts/masonry.js"></script>
+    <script src="scripts/slick.min.js"></script>
     <script src="scripts/main.js"></script>
 
 
 
     <script>
-    
-    var scene = document.getElementById("scene");
-    var parallax = new Parallax(scene);
-
+        var scene = document.getElementById("scene");
+        var parallax = new Parallax(scene);
     </script>
 
 </body>
