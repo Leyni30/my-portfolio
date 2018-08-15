@@ -532,7 +532,7 @@ footer h1 {
         bottom: 0;
         background: rgba(0, 0, 0, 0.72);
         z-index: 5;
-        display: block;
+        display: none;
 
     }
 
@@ -546,6 +546,51 @@ footer h1 {
         top: 10px;
         right: 10px;
         z-index: 20;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: #131313;
+        width: 100%;
+        max-width: 300px;
+        z-index: 30;
+        transform: translate3d(-100%, 0, 0);
+        transition: 0.3s;
+
+    }
+
+    nav.nav-wrapper ul li {
+        display: block;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    nav.nav-wrapper ul li a {
+        font-size: 18px;
+        line-height: 23px;
+
+    }
+
+    nav.nav-wrapper ul li a:hover {
+        border-color: transparent;
+
+    }
+
+    body.menu-is-active .menu {
+        transform: translate3d(0,0,0);
+        display: block;
+        padding: 0 15px;
+    }
+    .body.menu-is-active .main-overlay {
+        display: block;
+    }
+
+    .body.menu-is-active .menu-trigger {
+        display: none;
     }
 
  }
